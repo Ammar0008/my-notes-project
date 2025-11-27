@@ -1,0 +1,95 @@
+/* Base layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+body.light {
+    background: #f9fafb;
+    color: #111;
+}
+
+body.dark {
+    background: #111827;
+    color: #f3f4f6;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.btn {
+    background: #3f8cff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn.small {
+    padding: 8px;
+    font-size: 12px;
+}
+
+.delete {
+    background: #ff4b4b;
+}
+
+.delete:hover {
+    background: #ff2424;
+}
+
+.notes-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.notes-list li {
+    padding: 8px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #e2e2e2;
+}
+
+.notes-list li.active {
+    background: #3f8cff;
+    color: white;
+}
+
+/* Editor */
+.editor-area {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#note-editor {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: inherit;
+    color: inherit;
+}

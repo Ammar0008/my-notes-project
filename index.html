@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Notes App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>My Notes</h2>
+
+            <button id="add-note-btn" class="btn">+ Add Note</button>
+
+            <ul id="notes-list"></ul>
+
+            <button id="delete-note-btn" class="btn delete">Delete Note</button>
+
+            <button id="theme-toggle" class="btn small">Toggle Light / Dark</button>
+        </aside>
+
+        <!-- Editor -->
+        <main class="editor-area">
+            <textarea id="note-editor" placeholder="Select or create a note..."></textarea>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
